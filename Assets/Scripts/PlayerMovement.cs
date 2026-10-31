@@ -14,6 +14,9 @@ public class Movement : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float jumpHeight = 25f;
     [SerializeField] float climbSpeed = 7f;
+
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
     Animator myAnimator;
     CapsuleCollider2D capsuleCollider2D;
     BoxCollider2D footCollider2D;
@@ -57,6 +60,12 @@ public class Movement : MonoBehaviour
         {
             myRigidbody.linearVelocity += new Vector2(0f, jumpHeight);
         }
+    }
+
+    void OnAttack(InputValue value)
+    {
+        if (!isAlive) {return;}
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     void Run()
