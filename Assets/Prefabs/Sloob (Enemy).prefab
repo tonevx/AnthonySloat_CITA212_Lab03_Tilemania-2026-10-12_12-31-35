@@ -83,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1023813919
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4202276313728892354, guid: fe45f62a14f160841987340db18b99d2, type: 3}
@@ -154,12 +154,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.8125, y: 0.6875}
+  m_Offset: {x: 0.07077026, y: 0}
+  m_Size: {x: 0.6709595, y: 0.8125}
   m_Direction: 0
 --- !u!95 &7649763816922437498
 Animator:

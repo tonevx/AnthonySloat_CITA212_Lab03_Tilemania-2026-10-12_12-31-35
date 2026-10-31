@@ -102,7 +102,7 @@ public class Movement : MonoBehaviour
 
     void Death()
     {
-        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        if (capsuleCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy", "Hazards")) || footCollider2D.IsTouchingLayers(LayerMask.GetMask("Enemy")))
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
