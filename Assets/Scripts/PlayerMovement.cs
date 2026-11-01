@@ -115,6 +115,7 @@ public class Movement : MonoBehaviour
         {
             isAlive = false;
             myAnimator.SetTrigger("Dying");
+            FindAnyObjectByType<GameSession>().ProcessPlayerDeath();
             if (impulseSource != null)
             {
                 impulseSource.GenerateImpulse();
